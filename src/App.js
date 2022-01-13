@@ -1,7 +1,8 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import ParImpar from './components/ParImpar';
-
+import Familia from './components/relacao/Familia';
+import Membro from './components/relacao/Membro';
 
 // import Botao from './components/Botao';
 // import Contador from './components/Contador';
@@ -15,10 +16,17 @@ import ParImpar from './components/ParImpar';
 //componente baseado em função -> funcional
 export default () => (
   <View style={style.App}>
-
-    <ParImpar num={20}/>
+    <Familia>
+      <Membro nome = "Vania" sobrenome = "Mesquita"/>
+      <Membro nome = "Viviane" sobrenome = "Mesquita"/>
+    </Familia>
+    <Familia>
+      <Membro nome = "Ana" sobrenome = "Silva"/>
+      <Membro nome = "Carlos" sobrenome = "Silva"/>
+    </Familia>
 
     {/* 
+    <ParImpar num={20} />
     <Diferenciar/>
     <Contador inicial={100} passo={10}/>
     <Botao/>
@@ -39,6 +47,5 @@ const style = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-
-  }
-})
+  },
+});
