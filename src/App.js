@@ -1,8 +1,10 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
+import FlexBoxV1 from './components/layout/FlexBoxV1';
 
-import DigiteSeuNome from './components/DigiteSeuNome';
 
+//import Quadrado from './components/layout/Quadrado';
+//import DigiteSeuNome from './components/DigiteSeuNome';
 //import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 // import UsuarioLogado from './components/UsuarioLogado';
 // import ParImpar from './components/ParImpar';
@@ -20,9 +22,10 @@ import DigiteSeuNome from './components/DigiteSeuNome';
 //componente baseado em função -> funcional
 export default () => (
   <View style={style.App}>
-    <DigiteSeuNome />
+    <FlexBoxV1/>
 
-    {/* 
+    {/*
+    <DigiteSeuNome />
     <ListaProdutosV2 />
     <UsuarioLogado usuario={ {nome: 'Vania', email: 'vania@vania.com' } }/>
     <UsuarioLogado usuario={ {nome: 'Viviane', email: 'vivi@vivi.com' } }/>
