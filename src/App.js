@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import ListaProdutos from './components/produtos/ListaProdutos';
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 
 // import UsuarioLogado from './components/UsuarioLogado';
 // import ParImpar from './components/ParImpar';
@@ -18,7 +18,7 @@ import ListaProdutos from './components/produtos/ListaProdutos';
 //componente baseado em função -> funcional
 export default () => (
   <View style={style.App}>
-    <ListaProdutos />
+    <ListaProdutosV2 />
 
 
     {/* 
