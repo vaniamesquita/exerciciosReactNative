@@ -1,7 +1,8 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import UsuarioLogado from './components/UsuarioLogado';
+import ListaProdutos from './components/produtos/ListaProdutos';
 
+// import UsuarioLogado from './components/UsuarioLogado';
 // import ParImpar from './components/ParImpar';
 // import Familia from './components/relacao/Familia';
 // import Membro from './components/relacao/Membro';
@@ -17,15 +18,16 @@ import UsuarioLogado from './components/UsuarioLogado';
 //componente baseado em função -> funcional
 export default () => (
   <View style={style.App}>
+    <ListaProdutos />
 
+
+    {/* 
     <UsuarioLogado usuario={ {nome: 'Vania', email: 'vania@vania.com' } }/>
     <UsuarioLogado usuario={ {nome: 'Viviane', email: 'vivi@vivi.com' } }/>
     <UsuarioLogado usuario={ {nome: 'Bellinha' } }/>
     <UsuarioLogado usuario={ {email: 'isa@vania.com' } }/>
     <UsuarioLogado usuario={null}/>
     <UsuarioLogado usuario={{}}/>
-
-    {/* 
     <Familia>
       <Membro nome = "Vania" sobrenome = "Mesquita"/>
       <Membro nome = "Viviane" sobrenome = "Mesquita"/>
