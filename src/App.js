@@ -1,8 +1,10 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import FlexBoxV2 from './components/layout/FlexBoxV2';
+
+import FlexBoxV3 from './components/layout/FlexBoxV3';
 
 
+//import FlexBoxV2 from './components/layout/FlexBoxV2';
 //import FlexBoxV1 from './components/layout/FlexBoxV1';
 //import Quadrado from './components/layout/Quadrado';
 //import DigiteSeuNome from './components/DigiteSeuNome';
@@ -23,9 +25,11 @@ import FlexBoxV2 from './components/layout/FlexBoxV2';
 //componente baseado em função -> funcional
 export default () => (
   <View style={style.App}>
-    <FlexBoxV2/>
+    <FlexBoxV3/>
 
     {/*
+    <FlexBoxV2/>
+    <FlexBoxV1/>
     <DigiteSeuNome />
     <ListaProdutosV2 />
     <UsuarioLogado usuario={ {nome: 'Vania', email: 'vania@vania.com' } }/>
